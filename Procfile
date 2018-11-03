@@ -1,0 +1,1 @@
+web: gunicorn clientes_microsservico.wsgi
