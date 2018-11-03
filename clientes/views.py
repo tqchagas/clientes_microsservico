@@ -3,11 +3,11 @@ from clientes.serializers import ClienteSerializer
 from rest_framework import generics
 
 
-class ClienteList(generics.ListCreateAPIView):
+class ClienteCriarListar(generics.ListCreateAPIView):
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer
 
 
-class ClienteDetail(generics.RetrieveUpdateDestroyAPIView):
+class ClienteDetalheApagar(generics.RetrieveUpdateDestroyAPIView):
     queryset = Cliente.objects.all()
     serializer_class = ClienteSerializer

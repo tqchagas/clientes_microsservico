@@ -5,6 +5,6 @@ from clientes import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('clientes/', views.ClienteList.as_view()),
-    path('clientes/<int:pk>/', views.ClienteDetail.as_view())
+    path('clientes/', views.ClienteCriarListar.as_view()),
+    path('clientes/<int:pk>/', views.ClienteDetalheApagar.as_view())
 ]
